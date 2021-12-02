@@ -1,94 +1,140 @@
-TiCircularSlider
-===========================================
+# Axway Titanium iOS Project
+
+This is a skeleton Titanium iOS module project. Modules can be used to extend 
+the functionality of Titanium by providing additional native code that is compiled 
+into your application at build time and can expose certain APIs into JavaScript.
+
+## Naming
+
+Choose a unique module id for your module. We usually stick to a naming convention 
+like `ti.map` or `titanium-map` to make it more easy to find Titanium modules in the wild.
 
 
-Circular slider with many customizations.
-Wrapper module for EFCircularSlider.
+## Components
 
-<img src="images/demo.gif" />
+Components that are exposed by your module must follow a special naming convention.
+A component (widget, proxy, etc) must be named with the pattern:
 
-### Usage
+```
+Ti<ModuleName><ComponentName>Proxy
+```
 
-TiCircularProgress is pretty much a ProgressView replacement.
+For example, if you component was called Foo, your proxy would be named:
 
-	var TiCircularSlider = require('de.marcelpociot.circularslider');
+```
+TiMyfirstFooProxy
+```
 
-	var sliderView = TiCircularSlider.createView({
-		top: 200,
-		left: 50,
-		height: 250,
-		width: 250,
-		lineWidth: 5,
-		handleColor: 'red',
-		filledColor: '#d7d7d7',
-		unfilledColor: '#black'
-	});
-	sliderView.addEventListener('change',function(e)
-	{
-		Ti.API.info( "Value is: ", e.value );
-	});
-	win.add( sliderView );
-	
+For view proxies or widgets, you must create both a view proxy and a view implementation.
+If you widget was named proxy, you would create the following files:
 
-## Options
+```
+TiMyfirstFooProxy.h
+TiMyfirstFooProxy.m
+TiMyfirstFoo.h
+TiMyfirstFoo.m
+```
 
+The view implementation is named the same except it does contain the suffix `Proxy`.
 
-#### lineWidth
+View implementations extend the Titanium base class `TiUIView`. View Proxies extend the
+Titanium base class `TiUIViewProxy` or `TiUIWidgetProxy`.
 
-Type: `Float`  
-Default: `5`
+For proxies that are simply native objects that can be returned to JavaScript, you can
+simply extend `TiProxy` and no view implementation is required.
 
-The circle's line width.
+## Get started
 
+1. Edit manifest with the appropriate details about your module.
+2. Edit LICENSE to add your license details.
+3. Place any assets (such as PNG files) that are required in the assets folder.
+4. Edit the titanium.xcconfig and make sure you're building for the right Titanium version.
+5. Code and build.
 
-#### minimumValue
+## Build time configuration
 
-Type: `Float`  
-Default: `0.0`
+You can edit the file `module.xcconfig` to include any build time settings that should be
+set during application compilation that your module requires. This file will automatically get imported 
+in the main application project.
 
+For more information about this file, please see the [Apple documentation](https://developer.apple.com/library/content/featuredarticles/XcodeConcepts/Concept-Build_Settings.html).
 
-#### maximumValue
+# Documentation
 
-Type: `Float`  
-Default: `100.0`
+You should provide at least minimal documentation for your module in `documentation` folder using the 
+Markdown syntax.
 
-#### handleColor
+For more information on the Markdown syntax, refer to [this documentation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Type: `Color`  
-Default: `red`
+## Examples
 
-Color for the slider handle.
+The `example` directory contains a skeleton application test harness that can be
+used for testing and providing an example of usage to the users of your module.
 
+## Install
 
-#### filledColor
+1. Run `appc run -p ios --build-only` which creates your distribution package
+2. Switch to `~/Library/Application Support/Titanium`
+3. Copy this zip file into the folder of your Titanium SDK or copy it to your local project
 
-Type: `Color`  
-Default: `red`
+## Register the module
 
-Color for the filled (selected) area of the slider.
+Register your module with your application by editing `tiapp.xml` and adding your module.
+Example:
 
-#### unfilledColor
+```
+<modules>
+  <module version="0.1">__MODULE_ID__</module>
+</modules>
+```
 
-Type: `Color`  
-Default: `black`
+When you run your project, the compiler will know automatically compile in your module
+dependencies and copy appropriate image assets into the application.
 
-Color for the unfilled (unselected) area of the slider.
+## Using the module
 
-## Events
+To use your module in code, you will need to require it.
 
-### change
-Fired everytime the selection changes.
+For example,
 
-##### value
-Type: `Float`   
-The current selected value
+```js
+var myModule = require('__MODULE_ID__');
+myModule.foo();
+```
 
+## Pure JavaScript modules
 
-ABOUT THE AUTHOR
-========================
-I'm a web enthusiast located in Germany and in charge of http://www.titaniumcontrols.com
+You can write a pure JavaScript "natively compiled" module. This is nice if you
+want to distribute a JavaScript module pre-compiled.
 
-Follow me on twitter: @marcelpociot / @TitaniumCTRLs
+To create a module, create a file named __MODULE_ID__.js under the assets folder.
+This file must be in the CommonJS format. For example:
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mpociot/ticircularslider/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+```js
+exports.echo = (content) => {
+  return content;
+};
+```
 
+Any functions and properties that are exported will be made available as part of your
+module. All other code inside your JavaScript will be private to your module.
+
+For pure JavaScript module, you don't need to modify any of the Objective-C module code. You
+can leave it as-is and build.
+
+## Testing
+
+Run the `appc` CLI to test your module or test from within Xcode.
+To test with the script, execute:
+
+```
+appc run --project-dir <your-module-directory>
+```
+
+This will execute the app.js in the example folder as a Titanium application.
+
+## Distribution
+
+You can either open source your module or distribute your module via the [Appcelerator Marketplace](https://marketplace.appcelerator.com).
+
+Cheers!

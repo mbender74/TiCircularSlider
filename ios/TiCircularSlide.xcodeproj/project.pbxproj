@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,22 +22,23 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1EE76995185FB1F300E46898 /* EFCircularSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE76993185FB1F300E46898 /* EFCircularSlider.h */; };
-		1EE76996185FB1F300E46898 /* EFCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE76994185FB1F300E46898 /* EFCircularSlider.m */; };
-		1EE76999185FB23100E46898 /* DeMarcelpociotCircularsliderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE76997185FB23100E46898 /* DeMarcelpociotCircularsliderView.h */; };
-		1EE7699A185FB23100E46898 /* DeMarcelpociotCircularsliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE76998185FB23100E46898 /* DeMarcelpociotCircularsliderView.m */; };
-		1EE7699D185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE7699B185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.h */; };
-		1EE7699E185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7699C185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.m */; };
-		1EE769A0185FB58A00E46898 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE7699F185FB58A00E46898 /* QuartzCore.framework */; };
-		1EE769A2185FB59000E46898 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE769A1185FB59000E46898 /* CoreImage.framework */; };
-		24DD6CF91134B3F500162E58 /* DeMarcelpociotCircularsliderModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* DeMarcelpociotCircularsliderModule.h */; };
-		24DD6CFA1134B3F500162E58 /* DeMarcelpociotCircularsliderModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* DeMarcelpociotCircularsliderModule.m */; };
-		24DE9E1111C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.h */; };
-		24DE9E1211C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.m */; };
-		3AD6468A1C7B68F9002B069E /* EFCircularTrig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD646881C7B68F9002B069E /* EFCircularTrig.h */; };
-		3AD6468B1C7B68F9002B069E /* EFCircularTrig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD646891C7B68F9002B069E /* EFCircularTrig.m */; };
+		2C48AF5227593D0A0047AC2C /* DeMarcelpociotCircularsliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF4A27593D0A0047AC2C /* DeMarcelpociotCircularsliderView.m */; };
+		2C48AF5327593D0A0047AC2C /* DeMarcelpociotCircularsliderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF4B27593D0A0047AC2C /* DeMarcelpociotCircularsliderView.h */; };
+		2C48AF5427593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF4C27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.m */; };
+		2C48AF5527593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF4D27593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.m */; };
+		2C48AF5627593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF4E27593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.h */; };
+		2C48AF5727593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF4F27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h */; };
+		2C48AF5827593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF5027593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h */; };
+		2C48AF5927593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF5127593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m */; };
+		2C48AF6027593D7A0047AC2C /* EFCircularTrig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF5C27593D7A0047AC2C /* EFCircularTrig.m */; };
+		2C48AF6127593D7A0047AC2C /* EFCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF5D27593D7A0047AC2C /* EFCircularSlider.m */; };
+		2C48AF6227593D7A0047AC2C /* EFCircularTrig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF5E27593D7A0047AC2C /* EFCircularTrig.h */; };
+		2C48AF6327593D7A0047AC2C /* EFCircularSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF5F27593D7A0047AC2C /* EFCircularSlider.h */; };
+		2C48AF6527593D970047AC2C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48AF6427593D970047AC2C /* CoreImage.framework */; };
+		2C48AF6727593D9E0047AC2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48AF6627593D9E0047AC2C /* QuartzCore.framework */; };
 		AA747D9F0F9514B9006C5449 /* DeMarcelpociotCircularslider_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* DeMarcelpociotCircularslider_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B11E042C241AC5C100EFA7DC /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11E042B241AC5C100EFA7DC /* TitaniumKit.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,24 +52,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1EE76993185FB1F300E46898 /* EFCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularSlider.h; sourceTree = "<group>"; };
-		1EE76994185FB1F300E46898 /* EFCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularSlider.m; sourceTree = "<group>"; };
-		1EE76997185FB23100E46898 /* DeMarcelpociotCircularsliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderView.h; path = Classes/DeMarcelpociotCircularsliderView.h; sourceTree = "<group>"; };
-		1EE76998185FB23100E46898 /* DeMarcelpociotCircularsliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderView.m; path = Classes/DeMarcelpociotCircularsliderView.m; sourceTree = "<group>"; };
-		1EE7699B185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderViewProxy.h; path = Classes/DeMarcelpociotCircularsliderViewProxy.h; sourceTree = "<group>"; };
-		1EE7699C185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderViewProxy.m; path = Classes/DeMarcelpociotCircularsliderViewProxy.m; sourceTree = "<group>"; };
-		1EE7699F185FB58A00E46898 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1EE769A1185FB59000E46898 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		24DD6CF71134B3F500162E58 /* DeMarcelpociotCircularsliderModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderModule.h; path = Classes/DeMarcelpociotCircularsliderModule.h; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* DeMarcelpociotCircularsliderModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderModule.m; path = Classes/DeMarcelpociotCircularsliderModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderModuleAssets.h; path = Classes/DeMarcelpociotCircularsliderModuleAssets.h; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderModuleAssets.m; path = Classes/DeMarcelpociotCircularsliderModuleAssets.m; sourceTree = "<group>"; };
-		3AD646881C7B68F9002B069E /* EFCircularTrig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularTrig.h; sourceTree = "<group>"; };
-		3AD646891C7B68F9002B069E /* EFCircularTrig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularTrig.m; sourceTree = "<group>"; };
+		2C48AF4A27593D0A0047AC2C /* DeMarcelpociotCircularsliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderView.m; path = Classes/DeMarcelpociotCircularsliderView.m; sourceTree = "<group>"; };
+		2C48AF4B27593D0A0047AC2C /* DeMarcelpociotCircularsliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderView.h; path = Classes/DeMarcelpociotCircularsliderView.h; sourceTree = "<group>"; };
+		2C48AF4C27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderModuleAssets.m; path = Classes/DeMarcelpociotCircularsliderModuleAssets.m; sourceTree = "<group>"; };
+		2C48AF4D27593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderModule.m; path = Classes/DeMarcelpociotCircularsliderModule.m; sourceTree = "<group>"; };
+		2C48AF4E27593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderModule.h; path = Classes/DeMarcelpociotCircularsliderModule.h; sourceTree = "<group>"; };
+		2C48AF4F27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderModuleAssets.h; path = Classes/DeMarcelpociotCircularsliderModuleAssets.h; sourceTree = "<group>"; };
+		2C48AF5027593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderViewProxy.h; path = Classes/DeMarcelpociotCircularsliderViewProxy.h; sourceTree = "<group>"; };
+		2C48AF5127593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderViewProxy.m; path = Classes/DeMarcelpociotCircularsliderViewProxy.m; sourceTree = "<group>"; };
+		2C48AF5C27593D7A0047AC2C /* EFCircularTrig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularTrig.m; sourceTree = "<group>"; };
+		2C48AF5D27593D7A0047AC2C /* EFCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularSlider.m; sourceTree = "<group>"; };
+		2C48AF5E27593D7A0047AC2C /* EFCircularTrig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularTrig.h; sourceTree = "<group>"; };
+		2C48AF5F27593D7A0047AC2C /* EFCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularSlider.h; sourceTree = "<group>"; };
+		2C48AF6427593D970047AC2C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		2C48AF6627593D9E0047AC2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		AA747D9E0F9514B9006C5449 /* DeMarcelpociotCircularslider_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeMarcelpociotCircularslider_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libDeMarcelpociotCircularslider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDeMarcelpociotCircularslider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11E042B241AC5C100EFA7DC /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "$(TITANIUM_SDK)/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libde.marcelpociot.circularslider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libde.marcelpociot.circularslider.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE769A2185FB59000E46898 /* CoreImage.framework in Frameworks */,
-				1EE769A0185FB58A00E46898 /* QuartzCore.framework in Frameworks */,
+				2C48AF6727593D9E0047AC2C /* QuartzCore.framework in Frameworks */,
+				2C48AF6527593D970047AC2C /* CoreImage.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				B11E042C241AC5C100EFA7DC /* TitaniumKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +91,7 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC07E0554694100DB518D /* libDeMarcelpociotCircularslider.a */,
+				D2AAC07E0554694100DB518D /* libde.marcelpociot.circularslider.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,8 +110,9 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1EE769A1185FB59000E46898 /* CoreImage.framework */,
-				1EE7699F185FB58A00E46898 /* QuartzCore.framework */,
+				2C48AF6627593D9E0047AC2C /* QuartzCore.framework */,
+				2C48AF6427593D970047AC2C /* CoreImage.framework */,
+				B11E042B241AC5C100EFA7DC /* TitaniumKit.xcframework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -117,28 +121,29 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1EE76992185FB1F300E46898 /* EFCircularSlider */,
-				24DE9E0F11C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.h */,
-				24DE9E1011C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.m */,
-				24DD6CF71134B3F500162E58 /* DeMarcelpociotCircularsliderModule.h */,
-				24DD6CF81134B3F500162E58 /* DeMarcelpociotCircularsliderModule.m */,
-				1EE76997185FB23100E46898 /* DeMarcelpociotCircularsliderView.h */,
-				1EE76998185FB23100E46898 /* DeMarcelpociotCircularsliderView.m */,
-				1EE7699B185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.h */,
-				1EE7699C185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.m */,
+				2C48AF5B27593D7A0047AC2C /* EFCircularSlider */,
+				2C48AF4E27593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.h */,
+				2C48AF4D27593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.m */,
+				2C48AF4F27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h */,
+				2C48AF4C27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.m */,
+				2C48AF4B27593D0A0047AC2C /* DeMarcelpociotCircularsliderView.h */,
+				2C48AF4A27593D0A0047AC2C /* DeMarcelpociotCircularsliderView.m */,
+				2C48AF5027593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h */,
+				2C48AF5127593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		1EE76992185FB1F300E46898 /* EFCircularSlider */ = {
+		2C48AF5B27593D7A0047AC2C /* EFCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				3AD646881C7B68F9002B069E /* EFCircularTrig.h */,
-				3AD646891C7B68F9002B069E /* EFCircularTrig.m */,
-				1EE76993185FB1F300E46898 /* EFCircularSlider.h */,
-				1EE76994185FB1F300E46898 /* EFCircularSlider.m */,
+				2C48AF5C27593D7A0047AC2C /* EFCircularTrig.m */,
+				2C48AF5D27593D7A0047AC2C /* EFCircularSlider.m */,
+				2C48AF5E27593D7A0047AC2C /* EFCircularTrig.h */,
+				2C48AF5F27593D7A0047AC2C /* EFCircularSlider.h */,
 			);
-			path = EFCircularSlider;
+			name = EFCircularSlider;
+			path = Classes/EFCircularSlider;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -157,13 +162,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C48AF6227593D7A0047AC2C /* EFCircularTrig.h in Headers */,
+				2C48AF6327593D7A0047AC2C /* EFCircularSlider.h in Headers */,
+				2C48AF5727593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h in Headers */,
+				2C48AF5327593D0A0047AC2C /* DeMarcelpociotCircularsliderView.h in Headers */,
+				2C48AF5627593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* DeMarcelpociotCircularslider_Prefix.pch in Headers */,
-				1EE76999185FB23100E46898 /* DeMarcelpociotCircularsliderView.h in Headers */,
-				24DD6CF91134B3F500162E58 /* DeMarcelpociotCircularsliderModule.h in Headers */,
-				1EE7699D185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.h in Headers */,
-				24DE9E1111C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.h in Headers */,
-				3AD6468A1C7B68F9002B069E /* EFCircularTrig.h in Headers */,
-				1EE76995185FB1F300E46898 /* EFCircularSlider.h in Headers */,
+				2C48AF5827593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +189,7 @@
 			);
 			name = TiCircularSlide;
 			productName = TiCircularSlide;
-			productReference = D2AAC07E0554694100DB518D /* libDeMarcelpociotCircularslider.a */;
+			productReference = D2AAC07E0554694100DB518D /* libde.marcelpociot.circularslider.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -193,17 +198,18 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiCircularSlide" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				Base,
+				ja,
+				en,
+				de,
+				fr,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* TiCircularSlide */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -228,7 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+			shellScript = "# shell script goes here\n\nappc run --project-dir \"${PROJECT_DIR}\"\nexit $?\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -237,12 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD6468B1C7B68F9002B069E /* EFCircularTrig.m in Sources */,
-				1EE76996185FB1F300E46898 /* EFCircularSlider.m in Sources */,
-				24DD6CFA1134B3F500162E58 /* DeMarcelpociotCircularsliderModule.m in Sources */,
-				24DE9E1211C5FE74003F90F6 /* DeMarcelpociotCircularsliderModuleAssets.m in Sources */,
-				1EE7699A185FB23100E46898 /* DeMarcelpociotCircularsliderView.m in Sources */,
-				1EE7699E185FB23F00E46898 /* DeMarcelpociotCircularsliderViewProxy.m in Sources */,
+				2C48AF5227593D0A0047AC2C /* DeMarcelpociotCircularsliderView.m in Sources */,
+				2C48AF5427593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.m in Sources */,
+				2C48AF6127593D7A0047AC2C /* EFCircularSlider.m in Sources */,
+				2C48AF6027593D7A0047AC2C /* EFCircularTrig.m in Sources */,
+				2C48AF5927593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m in Sources */,
+				2C48AF5527593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +267,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/DeMarcelpociotCircularslider.dst;
@@ -281,18 +286,20 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = DeMarcelpociotCircularslider;
+				PRODUCT_NAME = de.marcelpociot.circularslider;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 			};
 			name = Debug;
 		};
@@ -301,13 +308,16 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = /tmp/DeMarcelpociotCircularslider.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DeMarcelpociotCircularslider_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TI_VERSION=$(TI_VERSION)",
+					NDEBUG,
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
@@ -319,14 +329,15 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = DeMarcelpociotCircularslider;
+				PRODUCT_NAME = de.marcelpociot.circularslider;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 			};
 			name = Release;
 		};
@@ -334,33 +345,69 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/DeMarcelpociotCircularslider.dst;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DeMarcelpociotCircularslider_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = DeMarcelpociotCircularslider;
+				PRODUCT_NAME = de.marcelpociot.circularslider;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -374,27 +421,62 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DSTROOT = /tmp/DeMarcelpociotCircularslider.dst;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DeMarcelpociotCircularslider_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = DeMarcelpociotCircularslider;
+				PRODUCT_NAME = de.marcelpociot.circularslider;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -418,8 +500,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "Build & test";
 				ZERO_LINK = NO;
 			};
