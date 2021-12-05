@@ -9,23 +9,6 @@
 #import "TiUtils.h"
 
 @implementation DeMarcelpociotCircularsliderViewProxy
-
--(void)valueChanged:(EFCircularSlider*)slider {
-    [self fireEvent:@"change" withObject:@{
-        @"value": NUMFLOAT([slider currentValue])
-    }];
-}
-
--(void)touchStarted:(EFCircularSlider*)slider {
-    [self fireEvent:@"touchstart" withObject:@{
-        @"value": NUMFLOAT([slider currentValue])
-    }];
-}
-
--(void)touchEnded:(EFCircularSlider*)slider {
-    [self fireEvent:@"touchend" withObject:@{
-        @"value": NUMFLOAT([slider currentValue])
-    }];
-}
+#pragma mark Public API
 
 @end

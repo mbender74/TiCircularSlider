@@ -9,18 +9,39 @@
 
 @implementation DeMarcelpociotCircularsliderView
 
+
+- (void)initializeState
+{
+    
+    [self createSlider];
+    [super initializeState];
+}
+
+
+
+- (void)createSlider
+{
+    if( sliderView == nil ){
+        NSLog(@"[ERROR] create Slider View");
+        
+        sliderView = [[EFCircularSlider alloc] initWithFrame:self.bounds];
+        [sliderView addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+        [sliderView addTarget:self action:@selector(touchStarted:) forControlEvents:UIControlEventTouchDown];
+        [sliderView addTarget:self action:@selector(touchEnded:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:sliderView];
+        [sliderView setCurrentValue:10.0f];
+    }
+}
+
+
 -(EFCircularSlider*)sliderView
 {
-    if( sliderView == nil )
-    {
-        NSLog(@"INITIALIZING VIEW %@",[self frame]);
-        sliderView = [[EFCircularSlider alloc] initWithFrame:[self frame]];
-        [self addSubview:sliderView];
-        [sliderView addTarget:self.proxy action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
-        [sliderView addTarget:self.proxy action:@selector(touchStarted:) forControlEvents:UIControlEventTouchDown];
-        [sliderView addTarget:self.proxy action:@selector(touchEnded:) forControlEvents:UIControlEventTouchUpInside];
+    if( sliderView == nil ){
+        return sliderView;
     }
-    return sliderView;
+    else {
+        return nil;
+    }
 }
 
 -(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
@@ -28,104 +49,103 @@
     NSLog(@"[VIEW LIFECYCLE EVENT] frameSizeChanged");
 
     if (sliderView != nil) {
-        
+        NSLog(@"[ERROR] frameSizeChanged not null");
+
         // You must call the special method 'setView:positionRect' against
         // the TiUtils helper class. This method will correctly layout your
         // child view within the correct layout boundaries of the new bounds
         // of your view.
         [TiUtils setView:sliderView positionRect:bounds];
-        EFCircularSlider *oldSlider = sliderView;
-        [sliderView removeFromSuperview];
-        sliderView = [[EFCircularSlider alloc] initWithFrame:bounds];
-        [self addSubview:sliderView];
-        [sliderView setMinimumValue:oldSlider.minimumValue];
-        [sliderView setMaximumValue:oldSlider.maximumValue];
-        [sliderView setLineWidth:oldSlider.lineWidth];
-        [sliderView setHandleColor:oldSlider.handleColor];
-        [sliderView setUnfilledColor:oldSlider.unfilledColor];
-        [sliderView setFilledColor:oldSlider.filledColor];
-
-        [sliderView setLabelFont:oldSlider.labelFont];
-        [sliderView setLabelColor:oldSlider.labelColor];
-        [sliderView setLabelDisplacement:oldSlider.labelDisplacement];
-        
-        // Event: "change"
-        [sliderView addTarget:self.proxy action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
-        
-        // Event: "touchstart"
-        [sliderView addTarget:self.proxy action:@selector(touchStarted:) forControlEvents:UIControlEventTouchDown];
-        
-        // Event: "touchend"
-        [sliderView addTarget:self.proxy action:@selector(touchEnded:) forControlEvents:UIControlEventTouchUpInside];
+       
     }
+    [super frameSizeChanged:frame bounds:bounds];
+
 }
 
 -(void)setMinimumValue_:(id)minimum
 {
-    [[self sliderView] setMinimumValue:[TiUtils floatValue:minimum def:0.0f]];
+    [sliderView setMinimumValue:[TiUtils floatValue:minimum def:0.0f]];
 }
 
 -(void)setMaximumValue_:(id)maximum
 {
-    [[self sliderView] setMaximumValue:[TiUtils floatValue:maximum def:100.0f]];
+    [sliderView setMaximumValue:[TiUtils floatValue:maximum def:100.0f]];
 }
 
 -(void)setValue_:(id)value
 {
-    [[self sliderView] setCurrentValue:[TiUtils floatValue:value def:0.0f]];
+    [sliderView setCurrentValue:[TiUtils floatValue:value def:0.0f]];
 }
 
 -(void)setLineWidth_:(id)value
 {
-    [[self sliderView] setLineWidth:[TiUtils floatValue:value def:0.0f]];
+    [sliderView setLineWidth:[TiUtils floatValue:value def:0.0f]];
 }
 
 -(void)setHandleColor_:(id)value
 {
-    [[self sliderView] setHandleColor:[TiUtils colorValue:value].color];
+    [sliderView setHandleColor:[[TiUtils colorValue:value] _color]];
 }
 
 -(void)setUnfilledColor_:(id)value
 {
-    [[self sliderView] setUnfilledColor:[TiUtils colorValue:value].color];
+    [sliderView setUnfilledColor:[[TiUtils colorValue:value] _color]];
 }
 
 -(void)setFilledColor_:(id)value
 {
-    [[self sliderView] setFilledColor:[TiUtils colorValue:value].color];
+    [sliderView setFilledColor:[[TiUtils colorValue:value] _color]];
 }
 
 -(void)setInnerMarkingLabels_:(NSArray *)value
 {
-    [[self sliderView] setInnerMarkingLabels:value];
+    [sliderView setInnerMarkingLabels:value];
 }
 
 -(void)setLabelFont_:(id)value
 {
-    [[self sliderView] setLabelFont:[TiUtils fontValue:value].font];
+    [sliderView setLabelFont:[TiUtils fontValue:value].font];
 }
 
 -(void)setLabelColor_:(id)value
 {
-    [[self sliderView] setLabelColor:[TiUtils colorValue:value].color];
+    [sliderView setLabelColor:[[TiUtils colorValue:value] _color]];
 }
 
 -(void)setLabelDisplacement_:(id)value
 {
-    [[self sliderView] setLabelDisplacement:[TiUtils floatValue:value]];
+    [sliderView setLabelDisplacement:[TiUtils floatValue:value]];
 }
 
-MAKE_SYSTEM_PROP(BIG_CIRCLE, CircularSliderHandleTypeBigCircle);
-MAKE_SYSTEM_PROP(SEMI_TRANSPARENT_WHITE_CIRCLE, CircularSliderHandleTypeSemiTransparentWhiteCircle);
-MAKE_SYSTEM_PROP(SEMI_TRANSPARENT_BLACK_CIRCLE, CircularSliderHandleTypeSemiTransparentBlackCircle);
-MAKE_SYSTEM_PROP(DOUBLE_CIRCLE_OPEN_CENTER, CircularSliderHandleTypeDoubleCircleWithOpenCenter);
-MAKE_SYSTEM_PROP(DOUBLE_CIRCLE_CLOSED_CENTER, CircularSliderHandleTypeDoubleCircleWithClosedCenter);
+MAKE_SYSTEM_PROP(BIG_CIRCLE, EFBigCircle);
+MAKE_SYSTEM_PROP(SEMI_TRANSPARENT_WHITE_CIRCLE, EFSemiTransparentWhiteCircle);
+MAKE_SYSTEM_PROP(SEMI_TRANSPARENT_BLACK_CIRCLE, EFSemiTransparentBlackCircle);
+MAKE_SYSTEM_PROP(DOUBLE_CIRCLE_OPEN_CENTER, EFDoubleCircleWithOpenCenter);
+MAKE_SYSTEM_PROP(DOUBLE_CIRCLE_CLOSED_CENTER,EFDoubleCircleWithClosedCenter);
 
 -(void)setHandleType_:(id)value
 {
     NSLog(@"Handle Type: %@",value);
-    [[self sliderView] setHandleType:value];
+    [sliderView setHandleType:value];
 }
 
+
+-(void)valueChanged:(EFCircularSlider*)slider {
+    [self.proxy fireEvent:@"change" withObject:@{
+        @"value": NUMFLOAT([slider currentValue])
+    }];
+}
+
+-(void)touchStarted:(EFCircularSlider*)slider {
+    [self.proxy fireEvent:@"touchstart" withObject:@{
+        @"value": NUMFLOAT([slider currentValue])
+    }];
+}
+
+-(void)touchEnded:(EFCircularSlider*)slider {
+    [self.proxy fireEvent:@"touchend" withObject:@{
+        @"value": NUMFLOAT([slider currentValue])
+    }];
+}
 
 @end

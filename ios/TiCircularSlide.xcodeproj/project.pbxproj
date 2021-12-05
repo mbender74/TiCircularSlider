@@ -30,9 +30,7 @@
 		2C48AF5727593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF4F27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h */; };
 		2C48AF5827593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF5027593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h */; };
 		2C48AF5927593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF5127593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m */; };
-		2C48AF6027593D7A0047AC2C /* EFCircularTrig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF5C27593D7A0047AC2C /* EFCircularTrig.m */; };
 		2C48AF6127593D7A0047AC2C /* EFCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C48AF5D27593D7A0047AC2C /* EFCircularSlider.m */; };
-		2C48AF6227593D7A0047AC2C /* EFCircularTrig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF5E27593D7A0047AC2C /* EFCircularTrig.h */; };
 		2C48AF6327593D7A0047AC2C /* EFCircularSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C48AF5F27593D7A0047AC2C /* EFCircularSlider.h */; };
 		2C48AF6527593D970047AC2C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48AF6427593D970047AC2C /* CoreImage.framework */; };
 		2C48AF6727593D9E0047AC2C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48AF6627593D9E0047AC2C /* QuartzCore.framework */; };
@@ -61,9 +59,7 @@
 		2C48AF4F27593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderModuleAssets.h; path = Classes/DeMarcelpociotCircularsliderModuleAssets.h; sourceTree = "<group>"; };
 		2C48AF5027593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeMarcelpociotCircularsliderViewProxy.h; path = Classes/DeMarcelpociotCircularsliderViewProxy.h; sourceTree = "<group>"; };
 		2C48AF5127593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeMarcelpociotCircularsliderViewProxy.m; path = Classes/DeMarcelpociotCircularsliderViewProxy.m; sourceTree = "<group>"; };
-		2C48AF5C27593D7A0047AC2C /* EFCircularTrig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularTrig.m; sourceTree = "<group>"; };
 		2C48AF5D27593D7A0047AC2C /* EFCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularSlider.m; sourceTree = "<group>"; };
-		2C48AF5E27593D7A0047AC2C /* EFCircularTrig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularTrig.h; sourceTree = "<group>"; };
 		2C48AF5F27593D7A0047AC2C /* EFCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularSlider.h; sourceTree = "<group>"; };
 		2C48AF6427593D970047AC2C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
 		2C48AF6627593D9E0047AC2C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -137,9 +133,7 @@
 		2C48AF5B27593D7A0047AC2C /* EFCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				2C48AF5C27593D7A0047AC2C /* EFCircularTrig.m */,
 				2C48AF5D27593D7A0047AC2C /* EFCircularSlider.m */,
-				2C48AF5E27593D7A0047AC2C /* EFCircularTrig.h */,
 				2C48AF5F27593D7A0047AC2C /* EFCircularSlider.h */,
 			);
 			name = EFCircularSlider;
@@ -162,7 +156,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C48AF6227593D7A0047AC2C /* EFCircularTrig.h in Headers */,
 				2C48AF6327593D7A0047AC2C /* EFCircularSlider.h in Headers */,
 				2C48AF5727593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.h in Headers */,
 				2C48AF5327593D0A0047AC2C /* DeMarcelpociotCircularsliderView.h in Headers */,
@@ -246,7 +239,6 @@
 				2C48AF5227593D0A0047AC2C /* DeMarcelpociotCircularsliderView.m in Sources */,
 				2C48AF5427593D0A0047AC2C /* DeMarcelpociotCircularsliderModuleAssets.m in Sources */,
 				2C48AF6127593D7A0047AC2C /* EFCircularSlider.m in Sources */,
-				2C48AF6027593D7A0047AC2C /* EFCircularTrig.m in Sources */,
 				2C48AF5927593D0A0047AC2C /* DeMarcelpociotCircularsliderViewProxy.m in Sources */,
 				2C48AF5527593D0A0047AC2C /* DeMarcelpociotCircularsliderModule.m in Sources */,
 			);

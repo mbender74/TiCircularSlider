@@ -5,8 +5,11 @@
  * Please see the LICENSE included with this distribution for details.
  */
 #import "TiBase.h"
-#import "TiUIView.h"
+#import <TitaniumKit/TiUIView.h>
+#import <TitaniumKit/TiViewProxy.h>
+#import <TitaniumKit/TiProxy.h>
 #import "EFCircularSlider.h"
+#import <TitaniumKit/TiUtils.h>
 
 @interface DeMarcelpociotCircularsliderView : TiUIView {
     EFCircularSlider* sliderView;
